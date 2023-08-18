@@ -1,9 +1,9 @@
 # Ignite Solution: The Hello World API Documentation
 
-Welcome to the official documentation repository for the "Hello World" API developed by Ignite Solution. This repository contains comprehensive documentation on how to interact with the API, its features, and how to integrate it into your projects.
+Welcome to the "Hello World" API.
 
 ## About the API
-The "Hello World" API is a simple yet powerful tool that allows you to retrieve a hello world message in multiple languages. It offers a straightforward way to get familiar with API concepts and is an excellent starting point for learning how to build and consume APIs.
+The "Hello World" API is a simple tool that allows you to retrieve a hello world message in multiple languages. It offers a straightforward way to get familiar with API concepts and is an excellent starting point for learning how to build and consume APIs.
 
 ## Getting Started
 
@@ -13,8 +13,11 @@ Before you begin, ensure you have the following tools installed:
 
 ### Installation
    Clone this repository to your local machine:
-   
-
+   ```
+   https://github.com/Adi1121/Hello_API.git
+   ```
+                  OR
+   Download and Extract the Zip file in a new folder Hello_API.
 
 ### API and Webpage Setup
 
@@ -24,6 +27,9 @@ cd Hello_API
 ```
 
 3. Install required Node.js packages:
+```
+npm install express
+```
 ```
 npm install
 ```
