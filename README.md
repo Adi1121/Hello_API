@@ -27,15 +27,12 @@ Before you begin, ensure you have the following tools installed:
 cd Hello_API
 ```
 
-3. Install required Node.js packages:
+2. Install required Node.js packages:
 ```
 npm install express
 ```
-```
-npm install
-```
 
-5. Start the API and webpage server:
+3. Start the API and webpage server:
 ```
 node server.js
 ```
