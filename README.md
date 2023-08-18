@@ -5,30 +5,46 @@ Welcome to the official documentation repository for the "Hello World" API devel
 ## About the API
 The "Hello World" API is a simple yet powerful tool that allows you to retrieve a hello world message in multiple languages. It offers a straightforward way to get familiar with API concepts and is an excellent starting point for learning how to build and consume APIs.
 
-<img src="https://github.com/Adi1121/Ignite-Solution-The-Hello-World-API/blob/main/Screenshot%202023-08-19%20033936.png" width="1000" height="400" alt="Intro">
-
-## Table of Contents
-- [Getting Started](#getting-started)
-- [API Endpoints](#api-endpoints)
-- [Using the Webpage](#using-the-webpage)
-- [Deployment (Optional)](#deployment-optional)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Getting Started
-Learn how to set up and run the "Hello World" API on your local machine. Get ready to explore different languages and their corresponding hello world messages.
 
-## API Endpoints
-Discover the available API endpoints and how to make GET requests to retrieve hello world messages in English, French, and Hindi.
+### Prerequisites
+Before you begin, ensure you have the following tools installed:
+- Node.js
 
-## Using the Webpage
-Explore the interactive webpage that allows you to choose a language and see the API response in action.
+### Installation
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/yourusername/Ignite-Solution-The-Hello-World-API.git
+   cd Ignite-Solution-The-Hello-World-API
 
-## Deployment (Optional)
-For those looking to take it a step further, we provide guidance on deploying the API and webpage to cloud platforms such as AWS, Heroku, or Google App Engine.
+API and Webpage Setup:
+Navigate to the API directory:
+bash
+Copy code
+cd API
+Install required Node.js packages:
+bash
+Copy code
+npm install
+Start the API and webpage server:
+bash
+Copy code
+node server.js
+Accessing the API and Webpage
+The API will be accessible at: http://localhost:5000/hello
+The webpage will be accessible at: http://localhost:5000
+Using the Webpage
+Open your web browser and navigate to the webpage URL (http://localhost:5000).
+Choose a language from the dropdown menu.
+Click the "Get Hello Message" button.
+A new tab will open with the API response showing the hello world message in the selected language.
+Optional: Deploying to a Cloud Provider
+If you'd like to deploy the API and webpage to a cloud provider such as Heroku, follow these steps:
 
-## Contributing
+Create accounts on the respective cloud platforms.
+Follow the deployment instructions for the specific platform you choose.
+Contributing
 We welcome contributions! If you find issues or have ideas to enhance the API or documentation, feel free to contribute through pull requests.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
+License
+This project is licensed under the MIT License.
