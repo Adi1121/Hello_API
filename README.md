@@ -16,25 +16,32 @@ Before you begin, ensure you have the following tools installed:
    
 
 
-###API and Webpage Setup
+### API and Webpage Setup
 
 1. Navigate to the API directory:
-```cd Hello_API```
+```
+cd Hello_API
+```
 
-2. Install required Node.js packages:
-```npm install```
+3. Install required Node.js packages:
+```
+npm install
+```
 
-3. Start the API and webpage server:
-```node server.js```
+5. Start the API and webpage server:
+```
+node server.js
+```
 
-###Accessing the Webpage
+### Accessing the Webpage
 
 Open your web browser and navigate to the webpage URL (http://localhost:5000).
 Choose a language from the dropdown menu.
 Click the ```"Get Hello Message"``` button.
 A new tab will open with the API response showing the hello world message in the selected language.
 
-###We welcome contributions! If you find issues or have ideas to enhance the API or documentation, feel free to contribute through pull requests.
+### Contributing
+We welcome contributions! If you find issues or have ideas to enhance the API or documentation, feel free to contribute through pull requests.
 
-###License
+### License
 This project is licensed under the MIT License.
