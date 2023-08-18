@@ -12,24 +12,22 @@ Before you begin, ensure you have the following tools installed:
 - Node.js
 
 ### Installation
-1. Clone this repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/Ignite-Solution-The-Hello-World-API.git
-   cd Ignite-Solution-The-Hello-World-API
+   Clone this repository to your local machine:
+   
 
-API and Webpage Setup:
-Navigate to the API directory:
-bash
-Copy code
-cd API
-Install required Node.js packages:
-bash
-Copy code
-npm install
-Start the API and webpage server:
-bash
-Copy code
-node server.js
+
+###API and Webpage Setup
+
+1. Navigate to the API directory:
+   
+```cd Hello_API```
+
+2. Install required Node.js packages:
+```npm install```
+
+3. Start the API and webpage server:
+```node server.js```
+
 Accessing the API and Webpage
 The API will be accessible at: http://localhost:5000/hello
 The webpage will be accessible at: http://localhost:5000
