@@ -44,6 +44,19 @@ Choose a language from the dropdown menu.
 Click the ```"Get Hello Message"``` button.
 A new tab will open with the API response showing the hello world message in the selected language.
 
+“Hello world”
+```
+http://localhost:5000/hello?language=English
+```
+“Bonjour le monde”
+```
+http://localhost:5000/hello?language=French
+```
+“Namastey sansar”
+```
+http://localhost:5000/hello?language=Hindi
+```
+
 ### Contributing
 We welcome contributions! If you find issues or have ideas to enhance the API or documentation, feel free to contribute through pull requests.
 
