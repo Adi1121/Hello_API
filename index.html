@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World API Webpage</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    label, select {
+      color: #555;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #result {
+      font-size: 18px;
+      margin-top: 20px;
+      color: #444;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello World API Webpage</h1>
+    <label for="language">Select a language:</label>
+    <select id="language">
+      <option value="English">English</option>
+      <option value="French">French</option>
+      <option value="Hindi">Hindi</option>
+    </select>
+    <button id="fetchButton">Get Hello Message</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    const fetchButton = document.getElementById('fetchButton');
+    const languageSelect = document.getElementById('language');
+    const resultElement = document.getElementById('result');
+  
+    fetchButton.addEventListener('click', async () => {
+      const selectedLanguage = languageSelect.value;
+      try {
+        const response = await fetch(`http://localhost:5000/hello?language=${selectedLanguage}`);
+        const data = await response.json();
+        resultElement.textContent = data.message; // Assuming API returns { "message": "Hello" }
+      } catch (error) {
+        resultElement.textContent = 'An error occurred. Please try again later.';
+      }
+    });
+  </script>
+</body>
+</html>
