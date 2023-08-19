@@ -58,7 +58,7 @@ http://localhost:5000/hello?language=French
 http://localhost:5000/hello?language=Hindi
 ```
 
-<img src="output.png" width="800" height="610" alt="WebPage">
+<img src="output.png" width="800" height="450" alt="WebPage">
 
 ### Contributing
 We welcome contributions! If you find issues or have ideas to enhance the API or documentation, feel free to contribute through pull requests.
