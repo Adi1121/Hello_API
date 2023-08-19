@@ -44,7 +44,7 @@ Choose a language from the dropdown menu.
 Click the ```"Get Hello Message"``` button.
 A new tab will open with the API response showing the hello world message in the selected language.
 
-#### Direct API Responses
+#### GET API Responses on Local Machine
 “Hello world”
 ```
 http://localhost:5000/hello?language=English
@@ -58,14 +58,20 @@ http://localhost:5000/hello?language=French
 http://localhost:5000/hello?language=Hindi
 ```
 
-<img src="output.png" width="800" height="450" alt="WebPage">
+![image](https://github.com/Adi1121/Hello_API/assets/80208985/2f7b369b-d30b-4628-8b4d-33c5fe592588)
+
+
+### Deploying to a Cloud Provider [AWS]
+Use the below endpoint to request the AWS API Gateway.
+Change the ```language``` field to English, Hindi or French.
+
+```
+https://8t4kt7qlnb.execute-api.us-east-1.amazonaws.com/prod/hello?language=[language]
+```
+You may also send the API GET request from <a href="https://www.postman.com/api-documentation-tool/" target="_blank">POSTMAN</a>.
 
 ### Contributing
 We welcome contributions! If you find issues or have ideas to enhance the API or documentation, feel free to contribute through pull requests.
 
 ### License
 This project is licensed under the MIT License.
-
-
-![image](https://github.com/Adi1121/Hello_API/assets/80208985/bd64043a-9a4d-47af-b1db-5f25a4a27224)
-
